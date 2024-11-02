@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #282c34;
+    color: white;
+}
+
+#auth, #game {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: #1b1f24;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#auth input, #auth button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 90%;
+}
+
+button {
+    padding: 10px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    color: #282c34;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+#coin {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: blue;
+    position: absolute;
+    cursor: pointer;
+}
+
+h1 {
+    color: #61dafb;
+}
+#chat-overlay {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    resize: both;
+    min-width: 150px;
+    min-height: 150px;
+    cursor: move; /* Mengubah kursor untuk indikasi draggable */
+}
+
+
+#chat-box {
+    padding: 10px;
+    color: #fff;
+}
+
+#chat-messages {
+    height: 150px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #333;
+}
+
+#chat-input {
+    width: calc(100% - 70px);
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#chat-box button {
+    padding: 8px 10px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    color: #282c34;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#chat-box button:hover {
+    background-color: #21a1f1;
+}
+
